@@ -2,6 +2,7 @@ import 'package:aminterested/Constants/ThemeColor.dart';
 import 'package:aminterested/Widgets/FacebookSignInButton.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:flutter/services.dart';
 
 class LoginMobileScreen extends StatefulWidget {
   @override
@@ -56,12 +57,18 @@ class _LoginMobileScreenState extends State<LoginMobileScreen> {
 //                      padding: EdgeInsets.all(20),
                         width: screenWidth/1.25,
                         child: TextField(
+                          keyboardType: TextInputType.number,
+                          inputFormatters: <TextInputFormatter>[
+                            WhitelistingTextInputFormatter.digitsOnly
+                          ],
+                          maxLength: 10,
                           decoration: new InputDecoration(
                               border: new OutlineInputBorder(
                                 borderRadius: const BorderRadius.all(
                                   const Radius.circular(10.0),
                                 ),
                               ),
+                              counterText: '',
                               filled: true,
                               hintStyle: new TextStyle(color: Colors.grey[800]),
                               hintText: "+91",
