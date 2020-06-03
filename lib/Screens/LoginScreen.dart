@@ -103,7 +103,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ),
                 RaisedButton(
-                  color: ThemeColor().pink,
+                  color: ThemeColor().purplelight,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(7)),
                   ),

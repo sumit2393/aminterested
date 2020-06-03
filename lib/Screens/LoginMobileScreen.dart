@@ -39,7 +39,7 @@ class _LoginMobileScreenState extends State<LoginMobileScreen> {
                             textAlign: TextAlign.center,
                             text: TextSpan(
                                 text: 'We will send you an ',
-                                style: TextStyle(color: ThemeColor().pink, fontSize: 16,),
+                                style: TextStyle(color: ThemeColor().yellow, fontSize: 16,),
                                 children: [
                                   TextSpan(
                                     text: 'One Time Password', style: TextStyle(fontWeight: FontWeight.bold),
@@ -77,7 +77,7 @@ class _LoginMobileScreenState extends State<LoginMobileScreen> {
                       ),
                       SizedBox(height: 30,),
                       RaisedButton(
-                        color: ThemeColor().pink,
+                        color: ThemeColor().purplelight,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.all(Radius.circular(7)),
                         ),
@@ -156,7 +156,7 @@ class _LoginMobileOTPScreenState extends State<LoginMobileOTPScreen> {
                       SizedBox(height: 100,),
                       Container(
                         padding: EdgeInsets.all(20),
-                          child: Text('Enter 6 digits verfication code sent to your number ', style: TextStyle(color: ThemeColor().pink, fontSize: 18), textAlign: TextAlign.center,)
+                          child: Text('Enter 6 digits verfication code sent to your number ', style: TextStyle(color: ThemeColor().purpledark, fontSize: 18), textAlign: TextAlign.center,)
                       ),
                       SizedBox(height: 46,),
                       PinEntryTextField(
@@ -176,7 +176,7 @@ class _LoginMobileOTPScreenState extends State<LoginMobileOTPScreen> {
                       ),
                       SizedBox(height: 35,),
                       RaisedButton(
-                        color: ThemeColor().pink,
+                        color: ThemeColor().purplelight,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.all(Radius.circular(7)),
                         ),

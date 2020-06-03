@@ -1,3 +1,4 @@
+import 'package:aminterested/Screens/RegistrationScreen.dart';
 import 'package:aminterested/iPhoneXXS11Pro1.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +16,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:LoginScreen(),
+      home:RegistrationScreen(),
     );
   }
 }
